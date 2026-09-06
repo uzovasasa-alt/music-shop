@@ -1,48 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ноутбук DemoBook 15 — МузМаркет</title>
-
-</head>
-
-<body>
-    <header>
-
-        <div>
-            <a href="../index.html">МузМаркет</a>
-        </div>
-
-        <nav>
-            <a href="../index.html">Главная</a>
-            <a href="catalog.html">Каталог</a>
-            <a href="product.html">Товар</a>
-        </nav>
-
+    <title>Акусточеская гитара Yamaha F310 — «Мелодия»</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="site-header__logo">Мелодия</a>
+      <nav class="site-header__nav" aria-label="Основная навигация">
+        <a href="../index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="../index.html#site-footer">Контакты</a>
+      </nav>
     </header>
-    <main>
+    <main class="product">
+      <h1>Акусточеская гитара Yamaha F310</h1>
+      <div class="product__layout">
+        <figure class="product__gallery">
+          <img
+            src="../img/yamaha310.jpg"
+            alt="Акусточеская гитара Yamaha F310"
+            width="360"
+            height="480"
+          />
+          <figcaption>
+            Акусточеская гитара Yamaha F310,В= вид спереди
+          </figcaption>
+        </figure>
+        <div class="product__info">
+          <p class="product__price">Цена:<strong> 14 990 ₽</strong></p>
+          <section aria-labelledby="description-heading">
+            <h2 id="description-heading">Описание</h2>
+            <p>
+              Акустическая гитара Yamaha F310 — это идеальный выбор для
+              начинающих музыкантов и тех, кто хочет насладиться качественным
+              звуком. Она обладает прочной конструкцией, удобной играбельностью
+              и богатым тембром, что делает её отличным инструментом для
+              обучения и выступлений.
+            </p>
+          </section>
+          <section aria-labelledby="specs-heading">
+            <h2 id="specs-heading">Характеристики</h2>
+            <table>
+              <tr>
+                <th>Характеристика</th>
+                <th>Значение</th>
+              </tr>
+              <tr>
+                <td>Бренд</td>
+                <td>Yamaha</td>
+              </tr>
+              <tr>
+                <td>Материал</td>
+                <td>Ель (верхняя дека), меранти (корпус)</td>
+              </tr>
+              <tr>
+                <td>Страна производства</td>
+                <td>Индонезия</td>
+              </tr>
+              <tr>
+                <td>Тип корпуса</td>
+                <td>Дредноут</td>
+              </tr>
+              <tr>
+                <td>Количество струн</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Мензура</td>
+                <td>650 мм</td>
+              </tr>
+            </table>
+          </section>
+          <section aria-labelledby="advantages-heading">
+            <h2 id="advantages-heading">Преимущества</h2>
+            <ul>
+              <li>Сбалансированное звучание для игры и записи</li>
+              <li>Подходит для начинающих музыкантов</li>
+              <li>Прочная и надёжная конструкция</li>
+            </ul>
+          </section>
 
-        <h1>Ноутбук DemoBook 15</h1>
+          <form
+            class="product__form"
+            aria-label="Выбор количества и оформление заказа"
+          >
+            <label for="qty">Количество</label>
+            <input
+              type="number"
+              id="qty"
+              name="qty"
+              value="1"
+              min="1"
+              max="10"
+            />
+            <button type="submit">В корзину</button>
+          </form>
+        </div>
+      </div>
 
-        <p>
-            Категория: Электроника
-        </p>
+      <p><a href="catalog.html">Вернуться в каталог</a></p>
 
-        <p>
-            Цена: <strong>75 000 ₽</strong>
-        </p>
-
-        <p>
-            DemoBook 15 — современный ноутбук
-            для работы, учёбы и повседневных задач.
-        </p>
-
+      <aside class="product__related" aria-labelledby="related-heading">
+        <h2 id="related-heading">Похожие товары</h2>
+        <ul>
+          <li><a href="product.html">Электрогитара Fender Stratocaster</a></li>
+          <li><a href="product.html">Скрипка Cremona SV-75</a></li>
+        </ul>
+      </aside>
     </main>
-    <strong>75 000 ₽</strong>
-</body>
 
+    <footer class="site-footer" id="site-footer">
+      <p>&copy; <time datetime="2026">2026</time> «Мелодия». Учебный проект.</p>
+      <address>
+        Email: <a href="mailto:info@melody-shop.ru">info@melody-shop.ru</a
+        ><br />
+        Телефон: <a href="tel:+79991234567">+7 (967) 912-45-67</a>
+      </address>
+    </footer>
+  </body>
 </html>
