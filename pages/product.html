@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Акустическая гитара Yamaha F310 — «Мелодия»</title>
+    <title>Товары — «Мелодия»</title>
     <link rel="stylesheet" href="../css/styles.css">
   </head>
   <body>
@@ -16,22 +16,23 @@
         <a href="../index.html#site-footer">Контакты</a>
       </nav>
     </header>
-    <main class="product">
-      <h1>Акустическая гитара Yamaha F310</h1>
+    <main>
+  <article class="product" id="product-1">
+    <h1>Акустическая гитара Yamaha F310</h1>
       <div class="product__layout">
         <figure class="product__gallery">
           <img
             src="../img/yamaha310.jpg"
             alt="Акустическая гитара Yamaha F310"
-            width="360"
-            height="480"
+            width="300"
+            height="600"
          >
           <figcaption>Акустическая гитара Yamaha F310, вид спереди</figcaption>
         </figure>
         <div class="product__info">
           <p class="product__price">Цена: <strong>14 990 ₽</strong></p>
-          <section aria-labelledby="description-heading">
-            <h2 id="description-heading">Описание</h2>
+          <section aria-labelledby="description-1">
+            <h2 id="description-1">Описание</h2>
             <p>
               Акустическая гитара Yamaha F310 — это идеальный выбор для
               начинающих музыкантов и тех, кто хочет насладиться качественным
@@ -40,8 +41,8 @@
               обучения и выступлений.
             </p>
           </section>
-          <section aria-labelledby="specs-heading">
-            <h2 id="specs-heading">Характеристики</h2>
+          <section aria-labelledby="specs-1">
+            <h2 id="specs-1">Характеристики</h2>
             <table>
               <thead>
                 <tr>
@@ -77,8 +78,8 @@
               </tbody>
             </table>
           </section>
-          <section aria-labelledby="advantages-heading">
-            <h2 id="advantages-heading">Преимущества</h2>
+          <section aria-labelledby="advantages-1">
+            <h2 id="advantages-1">Преимущества</h2>
             <ul>
               <li>Сбалансированное звучание для игры и записи</li>
               <li>Подходит для начинающих музыкантов</li>
@@ -93,7 +94,7 @@
             <label for="qty">Количество</label>
             <input
               type="number"
-              id="qty"
+              id="qty-1"
               name="qty"
               value="1"
               min="1"
@@ -108,13 +109,376 @@
 
       <aside class="product__related" aria-labelledby="related-heading">
         <h2 id="related-heading">Похожие товары</h2>
-        <ul>
-          <li><a href="product.html">Электрогитара Fender Stratocaster</a></li>
-          <li><a href="product.html">Скрипка Cremona SV-75</a></li>
-        </ul>
-      </aside>
-    </main>
+        <ul class="product__related-list">
+            <li><a href="product.html#product-2" class="product__related-link"><img src="../img/FenderStratocaster.jpg" alt="Электрогитара Fender Stratocaster" width="60" height="60"><span>Электрогитара Fender Stratocaster</span></a></li>
+            <li><a href="product.html#product-3" class="product__related-link"><img src="../img/CremonaSV-75.jpg" alt="Скрипка Cremona SV-75" width="60" height="60"><span>Скрипка Cremona SV-75</span></a></li>
+            <li><a href="product.html#product-8" class="product__related-link"><img src="../img/me.jpg" alt="Это я делаю задание" width="60" height="60"><span>Это я делаю задание</span></a></li>
+          </ul>
+        </aside>
+      </article>
+      <article class="product" id="product-2">
+        <h1>Электрогитара Fender Stratocaster</h1>
+        <div class="product__layout">
+          <figure class="product__gallery">
+            <img src="../img/FenderStratocaster.jpg" alt="Электрогитара Fender Stratocaster" width="300" height="600">
+            <figcaption>Электрогитара Fender Stratocaster, вид спереди</figcaption>
+          </figure>
+          <div class="product__info">
+            <p class="product__price">Цена: <strong>64 500 ₽</strong></p>
+            <section aria-labelledby="description-2">
+              <h2 id="description-2">Описание</h2>
+              <p>
+                Fender Stratocaster — легендарная электрогитара, знакомая
+                миллионам музыкантов. Три однокатушечных звукоснимателя дают
+                широкий диапазон тембров: от чистого звука до драйва.
+              </p>
+            </section>
+            <section aria-labelledby="specs-2">
+              <h2 id="specs-2">Характеристики</h2>
+              <table>
+                <thead><tr><th>Характеристика</th><th>Значение</th></tr></thead>
+                <tbody>
+                  <tr><td>Бренд</td><td>Fender</td></tr>
+                  <tr><td>Материал</td><td>Ольха (корпус), клён (гриф)</td></tr>
+                  <tr><td>Страна производства</td><td>Мексика</td></tr>
+                  <tr><td>Тип корпуса</td><td>Solid body</td></tr>
+                  <tr><td>Количество струн</td><td>6</td></tr>
+                  <tr><td>Мензура</td><td>648 мм</td></tr>
+                </tbody>
+              </table>
+            </section>
+            <section aria-labelledby="advantages-2">
+              <h2 id="advantages-2">Преимущества</h2>
+              <ul>
+                <li>Универсальное звучание для разных стилей</li>
+                <li>Удобный тонкий гриф</li>
+                <li>Классический, узнаваемый тембр</li>
+              </ul>
+            </section>
+            <form class="product__form" aria-label="Выбор количества и оформление заказа">
+              <label for="qty-2">Количество</label>
+              <input type="number" id="qty-2" name="qty" value="1" min="1" max="10">
+              <button type="submit">В корзину</button>
+            </form>
+          </div>
+        </div>
+        <aside class="product__related" aria-labelledby="related-2">
+          <h2 id="related-2">Похожие товары</h2>
+          <ul class="product__related-list">
+            <li><a href="product.html#product-1" class="product__related-link"><img src="../img/yamaha310.jpg" alt="Акустическая гитара Yamaha F310" width="60" height="60"><span>Акустическая гитара Yamaha F310</span></a></li>
+            <li><a href="product.html#product-3" class="product__related-link"><img src="../img/CremonaSV-75.jpg" alt="Скрипка Cremona SV-75" width="60" height="60"><span>Скрипка Cremona SV-75</span></a></li>
+            <li><a href="product.html#product-8" class="product__related-link"><img src="../img/me.jpg" alt="Это я делаю задание" width="60" height="60"><span>Это я делаю задание</span></a></li>
+          </ul>
+        </aside>
+      </article>
+      <article class="product" id="product-3">
+        <h1> Скрипка Cremona SV-75</h1>
+        <div class="product__layout">
+          <figure class="product__gallery">
+            <img src="../img/CremonaSV-75.jpg" alt="Скрипка Cremona SV-75" width="300" height="600">
+            <figcaption>Скрипка Cremona SV-75, размер 4/4</figcaption>
+          </figure>
+          <div class="product__info">
+            <p class="product__price">Цена: <strong>27 300 ₽</strong></p>
+            <section aria-labelledby="description-3">
+              <h2 id="description-3">Описание</h2>
+              <p>
+                Cremona SV-75 — скрипка начального уровня для учеников музыкальных
+                школ. Верхняя дека из ели и нижняя дека из клёна обеспечивают
+                тёплый, ровный звук.
+              </p>
+            </section>
+            <section aria-labelledby="specs-3">
+              <h2 id="specs-3">Характеристики</h2>
+              <table>
+                <thead><tr><th>Характеристика</th><th>Значение</th></tr></thead>
+                <tbody>
+                  <tr><td>Бренд</td><td>Cremona</td></tr>
+                  <tr><td>Материал</td><td>Ель, клён</td></tr>
+                  <tr><td>Страна производства</td><td>Китай</td></tr>
+                  <tr><td>Размер</td><td>4/4</td></tr>
+                  <tr><td>Количество струн</td><td>4</td></tr>
+                  <tr><td>Мензура</td><td>328 мм</td></tr>
+                </tbody>
+              </table>
+            </section>
+            <section aria-labelledby="advantages-3">
+              <h2 id="advantages-3">Преимущества</h2>
+              <ul>
+                <li>Комплект со смычком и футляром</li>
+                <li>Тёплый и мягкий тембр</li>
+                <li>Подходит для обучения в музыкальной школе</li>
+              </ul>
+            </section>
+            <form class="product__form" aria-label="Выбор количества и оформление заказа">
+              <label for="qty-3">Количество</label>
+              <input type="number" id="qty-3" name="qty" value="1" min="1" max="10">
+              <button type="submit">В корзину</button>
+            </form>
+          </div>
+        </div>
+        <aside class="product__related" aria-labelledby="related-3">
+          <h2 id="related-3">Похожие товары</h2>
+          <ul class="product__related-list">
+            <li><a href="product.html#product-1" class="product__related-link"><img src="../img/yamaha310.jpg" alt="Акустическая гитара Yamaha F310" width="60" height="60"><span>Акустическая гитара Yamaha F310</span></a></li>
+            <li><a href="product.html#product-2" class="product__related-link"><img src="../img/FenderStratocaster.jpg" alt="Электрогитара Fender Stratocaster" width="60" height="60"><span>Электрогитара Fender Stratocaster</span></a></li>
+            <li><a href="product.html#product-8" class="product__related-link"><img src="../img/me.jpg" alt="Это я делаю задание" width="60" height="60"><span>Это я делаю задание</span></a></li>
+          </ul>
+        </aside>
+      </article>
+      <article class="product" id="product-4">
+        <h1>Цифровое пианино Kawai PSR-ES373</h1>
+        <div class="product__layout">
+          <figure class="product__gallery">
+            <img src="../img/KawaiES120.jpg" alt="Цифровое пианино Kawai PSR-ES373" width="300" height="600">
+            <figcaption>Цифровое пианино Kawai PSR-ES373</figcaption>
+          </figure>
+          <div class="product__info">
+            <p class="product__price">Цена: <strong>89 990 ₽</strong></p>
+            <section aria-labelledby="description-4">
+              <h2 id="description-4">Описание</h2>
+              <p>
+                Цифровое пианино с полновзвешенной механикой клавиш, максимально
+                приближенной по ощущениям к акустическому инструменту.
+              </p>
+            </section>
+            <section aria-labelledby="specs-4">
+              <h2 id="specs-4">Характеристики</h2>
+              <table>
+                <thead><tr><th>Характеристика</th><th>Значение</th></tr></thead>
+                <tbody>
+                  <tr><td>Бренд</td><td>Kawai</td></tr>
+                  <tr><td>Клавиатура</td><td>88 взвешенных клавиш</td></tr>
+                  <tr><td>Страна производства</td><td>Индонезия</td></tr>
+                  <tr><td>Полифония</td><td>192 голоса</td></tr>
+                  <tr><td>Тембры</td><td>19</td></tr>
+                  <tr><td>Разъёмы</td><td>USB, аудиовыход, педаль</td></tr>
+                </tbody>
+              </table>
+            </section>
+            <section aria-labelledby="advantages-4">
+              <h2 id="advantages-4">Преимущества</h2>
+              <ul>
+                <li>Реалистичное туше молоточковой механики</li>
+                <li>Встроенные динамики хорошего качества</li>
+                <li>Компактный корпус для дома</li>
+              </ul>
+            </section>
+            <form class="product__form" aria-label="Выбор количества и оформление заказа">
+              <label for="qty-4">Количество</label>
+              <input type="number" id="qty-4" name="qty" value="1" min="1" max="10">
+              <button type="submit">В корзину</button>
+            </form>
+          </div>
+        </div>
+        <aside class="product__related" aria-labelledby="related-4">
+          <h2 id="related-4">Похожие товары</h2>
+          <ul class="product__related-list">
+            <li><a href="product.html#product-5" class="product__related-link"><img src="../img/YamahaPSR-E373.jpg" alt="Синтезатор Yamaha PSR-E373" width="60" height="60"><span>Синтезатор Yamaha PSR-E373</span></a></li>
+            <li><a href="product.html#product-6" class="product__related-link"><img src="../img/PearlRoadshow.jpg" alt="Барабанная установка Pearl Roadshow" width="60" height="60"><span>Барабанная установка Pearl Roadshow</span></a></li>
+            <li><a href="product.html#product-8" class="product__related-link"><img src="../img/me.jpg" alt="Это я делаю задание" width="60" height="60"><span>Это я делаю задание</span></a></li>
+          </ul>
+        </aside>
+      </article>
+      <article class="product" id="product-5">
+        <h1>Синтезатор Yamaha PSR-E373</h1>
+        <div class="product__layout">
+          <figure class="product__gallery">
+            <img src="../img/YamahaPSR-E373.jpg" alt="Синтезатор Yamaha PSR-E373" width="300" height="600">
+            <figcaption>Синтезатор Yamaha PSR-E373</figcaption>
+          </figure>
+          <div class="product__info">
+            <p class="product__price">Цена: <strong>32 400 ₽</strong></p>
+            <section aria-labelledby="description-5">
+              <h2 id="description-5">Описание</h2>
+              <p>
+                Компактный синтезатор для начинающих с широким набором тембров
+                и встроенных стилей аккомпанемента.
+              </p>
+            </section>
+            <section aria-labelledby="specs-5">
+              <h2 id="specs-5">Характеристики</h2>
+              <table>
+                <thead><tr><th>Характеристика</th><th>Значение</th></tr></thead>
+                <tbody>
+                  <tr><td>Бренд</td><td>Yamaha</td></tr>
+                  <tr><td>Клавиатура</td><td>61 клавиша</td></tr>
+                  <tr><td>Страна производства</td><td>Индонезия</td></tr>
+                  <tr><td>Полифония</td><td>48 голосов</td></tr>
+                  <tr><td>Стили</td><td>165</td></tr>
+                  <tr><td>Тембры</td><td>622</td></tr>
+                </tbody>
+              </table>
+            </section>
+            <section aria-labelledby="advantages-5">
+              <h2 id="advantages-5">Преимущества</h2>
+              <ul>
+                <li>Лёгкий и компактный корпус</li>
+                <li>Обучающая функция для новичков</li>
+                <li>Большой выбор тембров и стилей</li>
+              </ul>
+            </section>
+            <form class="product__form" aria-label="Выбор количества и оформление заказа">
+              <label for="qty-5">Количество</label>
+              <input type="number" id="qty-5" name="qty" value="1" min="1" max="10">
+              <button type="submit">В корзину</button>
+            </form>
+          </div>
+        </div>
+        <aside class="product__related" aria-labelledby="related-5">
+          <h2 id="related-5">Похожие товары</h2>
+          <ul class="product__related-list">
+            <li><a href="product.html#product-4" class="product__related-link"><img src="../img/KawaiES120.jpg" alt="Цифровое пианино Kawai PSR-ES373" width="60" height="60"><span>Цифровое пианино Kawai PSR-ES373</span></a></li>
+            <li><a href="product.html#product-7" class="product__related-link"><img src="../img/RolandTD-1DMK.jpg" alt="Электронная барабанная установка Roland TD-1DMK" width="60" height="60"><span>Электронная барабанная установка Roland TD-1DMK</span></a></li>
+            <li><a href="product.html#product-8" class="product__related-link"><img src="../img/me.jpg" alt="Это я делаю задание" width="60" height="60"><span>Это я делаю задание</span></a></li>
+          </ul>
+        </aside>
+      </article>
+      <article class="product" id="product-6">
+        <h1>Барабанная установка Pearl Roadshow</h1>
+        <div class="product__layout">
+          <figure class="product__gallery">
+            <img src="../img/PearlRoadshow.jpg" alt="Барабанная установка Pearl Roadshow" width="300" height="600">
+            <figcaption>Барабанная установка Pearl Roadshow, комплект</figcaption>
+          </figure>
+          <div class="product__info">
+            <p class="product__price">Цена: <strong>54 900 ₽</strong></p>
+            <section aria-labelledby="description-6">
+              <h2 id="description-6">Описание</h2>
+              <p>
+                Полный стартовый комплект акустической установки: бас-барабан,
+                малый барабан, том-томы, стойки и тарелки.
+              </p>
+            </section>
+            <section aria-labelledby="specs-6">
+              <h2 id="specs-6">Характеристики</h2>
+              <table>
+                <thead><tr><th>Характеристика</th><th>Значение</th></tr></thead>
+                <tbody>
+                  <tr><td>Бренд</td><td>Pearl</td></tr>
+                  <tr><td>Материал корпусов</td><td>Тополь</td></tr>
+                  <tr><td>Страна производства</td><td>Тайвань</td></tr>
+                  <tr><td>Количество барабанов</td><td>5</td></tr>
+                  <tr><td>Комплектация</td><td>Стойки, педаль, тарелки</td></tr>
+                  <tr><td>Цвет</td><td>Jet Black</td></tr>
+                </tbody>
+              </table>
+            </section>
+            <section aria-labelledby="advantages-6">
+              <h2 id="advantages-6">Преимущества</h2>
+              <ul>
+                <li>Готовый комплект «всё включено»</li>
+                <li>Прочные корпуса барабанов</li>
+                <li>Подходит для начинающих ударников</li>
+              </ul>
+            </section>
+            <form class="product__form" aria-label="Выбор количества и оформление заказа">
+              <label for="qty-6">Количество</label>
+              <input type="number" id="qty-6" name="qty" value="1" min="1" max="10">
+              <button type="submit">В корзину</button>
+            </form>
+          </div>
+        </div>
+        <aside class="product__related" aria-labelledby="related-6">
+          <h2 id="related-6">Похожие товары</h2>
+          <ul class="product__related-list">
+            <li><a href="product.html#product-7" class="product__related-link"><img src="../img/RolandTD-1DMK.jpg" alt="Электронная барабанная установка Roland TD-1DMK" width="60" height="60"><span>Электронная барабанная установка Roland TD-1DMK</span></a></li>
+            <li><a href="product.html#product-4" class="product__related-link"><img src="../img/KawaiES120.jpg" alt="Цифровое пианино Kawai PSR-ES373" width="60" height="60"><span>Цифровое пианино Kawai PSR-ES373</span></a></li>
+            <li><a href="product.html#product-8" class="product__related-link"><img src="../img/me.jpg" alt="Это я делаю задание" width="60" height="60"><span>Это я делаю задание</span></a></li>
+          </ul>
+        </aside>
+      </article>
+      <article class="product" id="product-7">
+        <h1>Электронная барабанная установка Roland TD-1DMK</h1>
+        <div class="product__layout">
+          <figure class="product__gallery">
+            <img src="../img/RolandTD-1DMK.jpg" alt="Электронная барабанная установка Roland TD-1DMK" width="300" height="600">
+            <figcaption>Электронная барабанная установка Roland TD-1DMK</figcaption>
+          </figure>
+          <div class="product__info">
+            <p class="product__price">Цена: <strong>71 200 ₽</strong></p>
+            <section aria-labelledby="description-7">
+              <h2 id="description-7">Описание</h2>
+              <p>
+                Электронная установка с сетчатыми пэдами Mesh Head — тихая игра
+                с реалистичным откликом, можно заниматься в наушниках.
+              </p>
+            </section>
+            <section aria-labelledby="specs-7">
+              <h2 id="specs-7">Характеристики</h2>
+              <table>
+                <thead><tr><th>Характеристика</th><th>Значение</th></tr></thead>
+                <tbody>
+                  <tr><td>Бренд</td><td>Roland</td></tr>
+                  <tr><td>Тип пэдов</td><td>Сетчатые (Mesh Head)</td></tr>
+                  <tr><td>Страна производства</td><td>Малайзия</td></tr>
+                  <tr><td>Модуль</td><td>TD-1</td></tr>
+                  <tr><td>Наборы звуков</td><td>15</td></tr>
+                  <tr><td>Наушники в комплекте</td><td>Да</td></tr>
+                </tbody>
+              </table>
+            </section>
+            <section aria-labelledby="advantages-7">
+              <h2 id="advantages-7">Преимущества</h2>
+              <ul>
+                <li>Тихая игра для занятий дома</li>
+                <li>Компактные размеры</li>
+                <li>Подключение наушников и подсчёт ритма</li>
+              </ul>
+            </section>
+            <form class="product__form" aria-label="Выбор количества и оформление заказа">
+              <label for="qty-7">Количество</label>
+              <input type="number" id="qty-7" name="qty" value="1" min="1" max="10">
+              <button type="submit">В корзину</button>
+            </form>
+          </div>
+        </div>
+        <aside class="product__related" aria-labelledby="related-7">
+          <h2 id="related-7">Похожие товары</h2>
+          <ul class="product__related-list">
+            <li><a href="product.html#product-6" class="product__related-link"><img src="../img/PearlRoadshow.jpg" alt="Барабанная установка Pearl Roadshow" width="60" height="60"><span>Барабанная установка Pearl Roadshow</span></a></li>
+            <li><a href="product.html#product-5" class="product__related-link"><img src="../img/YamahaPSR-E373.jpg" alt="Синтезатор Yamaha PSR-E373" width="60" height="60"><span>Синтезатор Yamaha PSR-E373</span></a></li>
+            <li><a href="product.html#product-8" class="product__related-link"><img src="../img/me.jpg" alt="Это я делаю задание" width="60" height="60"><span>Это я делаю задание</span></a></li>
+          </ul>
+        </aside>
+      </article>
+       <article class="product" id="product-8">
+        <h1>Это я делаю задание</h1>
+        <div class="product__layout">
+          <figure class="product__gallery">
+            <img src="../img/me.jpg" alt="Это я делаю задание" width="300" height="600">
+            <figcaption>Процесс выполнения лабораторной работы</figcaption>
+          </figure>
+          <div class="product__info">
+            <p class="product__price">Цена: <strong>Бесценно</strong></p>
+            <section aria-labelledby="description-8">
+              <h2 id="description-8">Описание</h2>
+              <p>
+                Внекатегорийный экспонат витрины — фотография процесса вёрстки
+                этого магазина. Не продаётся, зато напоминает, сколько усилий
+                уходит на семантическую разметку и адаптивный CSS.
+              </p>
+            </section>
+            <section aria-labelledby="advantages-8">
+              <h2 id="advantages-8">Преимущества</h2>
+              <ul>
+                <li>Мотивирует доделать лабораторную работу до конца</li>
+                <li>Единственный товар в магазине без цены</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <aside class="product__related" aria-labelledby="related-8">
+          <h2 id="related-8">Похожие товары</h2>
+          <ul class="product__related-list">
+            <li><a href="product.html#product-1" class="product__related-link"><img src="../img/yamaha310.jpg" alt="Акустическая гитара Yamaha F310" width="60" height="60"><span>Акустическая гитара Yamaha F310</span></a></li>
+            <li><a href="product.html#product-6" class="product__related-link"><img src="../img/PearlRoadshow.jpg" alt="Барабанная установка Pearl Roadshow" width="60" height="60"><span>Барабанная установка Pearl Roadshow</span></a></li>
+          </ul>
+        </aside>
+      </article>
 
+      <p><a href="catalog.html">Вернуться в каталог</a></p>
+    </main>
     <footer class="site-footer" id="site-footer">
       <p>&copy; <time datetime="2026">2026</time> «Мелодия». Учебный проект.</p>
       <address>
