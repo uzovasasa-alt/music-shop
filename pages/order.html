@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа — «Мелодия»</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="../index.html" class="site-header__logo">Мелодия</a>
+
+        <nav class="site-header__nav" aria-label="Основная навигация">
+            <a href="../index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="product.html">Товар</a>
+            <a href="registration.html">Регистрация</a>
+            <a href="login.html">Вход</a>
+            <a href="order.html" aria-current="page">Оформление заказа</a>
+            <a href="../index.html#site-footer">Контакты</a>
+        </nav>
+    </header>
+    <main class="form-page">
+        <h1>Оформление заказа</h1>
+        <p class="form-page__lead">
+            Выберите инструмент, укажите данные для доставки и способ оплаты.
+            Менеджер свяжется с вами для подтверждения заказа.
+        </p>
+
+        <form class="shop-form" action="#" method="post">
+            <fieldset>
+                <legend>Контактные данные</legend>
+
+                <div class="form-row">
+                    <label for="order-first-name">Имя</label>
+                    <input id="order-first-name" name="first-name" type="text"
+                           placeholder="Введите имя" minlength="2" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="order-last-name">Фамилия</label>
+                    <input id="order-last-name" name="last-name" type="text"
+                           placeholder="Введите фамилию" minlength="2" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="order-phone">Телефон</label>
+                    <input id="order-phone" name="phone" type="tel"
+                           placeholder="+7 (900) 000-00-00" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="order-email">Электронная почта</label>
+                    <input id="order-email" name="email" type="email"
+                           placeholder="example@mail.ru" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Доставка</legend>
+
+                <div class="form-row">
+                    <label for="city">Город</label>
+                    <input id="city" name="city" type="text"
+                           placeholder="Например: Саранск" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="address">Адрес</label>
+                    <input id="address" name="address" type="text"
+                           placeholder="Улица, дом, квартира" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="delivery">Способ доставки</label>
+                    <select id="delivery" name="delivery" required>
+                        <option value="">Выберите вариант</option>
+                        <option value="pickup">Пункт выдачи</option>
+                        <option value="courier">Курьер</option>
+                        <option value="post">Почта</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="delivery-date">Желаемая дата доставки</label>
+                    <input id="delivery-date" name="delivery-date" type="date">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Заказ</legend>
+
+                <div class="form-row">
+                    <label for="product">Инструмент</label>
+                    <select id="product" name="product" required>
+                        <option value="">Выберите инструмент</option>
+                        <optgroup label="Струнные инструменты">
+                            <option value="product-1">Акустическая гитара Yamaha F310</option>
+                            <option value="product-2">Электрогитара Fender Stratocaster</option>
+                            <option value="product-3">Скрипка Cremona SV-75</option>
+                        </optgroup>
+                        <optgroup label="Клавишные инструменты">
+                            <option value="product-4">Цифровое пианино Kawai PSR-ES373</option>
+                            <option value="product-5">Синтезатор Yamaha PSR-E373</option>
+                        </optgroup>
+                        <optgroup label="Ударные и аксессуары">
+                            <option value="product-6">Барабанная установка Pearl Roadshow</option>
+                            <option value="product-7">Электронная барабанная установка Roland TD-1DMK</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="quantity">Количество</label>
+                    <input id="quantity" name="quantity" type="number"
+                           min="1" max="10" value="1" required>
+                </div>
+
+                <label class="checkbox-row">
+                    <input type="checkbox" name="tuning">
+                    <span>Нужна предпродажная настройка инструмента</span>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Оплата</legend>
+
+                <label class="radio-row">
+                    <input type="radio" name="payment" value="card" required>
+                    <span>Банковская карта</span>
+                </label>
+
+                <label class="radio-row">
+                    <input type="radio" name="payment" value="sbp">
+                    <span>СБП</span>
+                </label>
+
+                <label class="radio-row">
+                    <input type="radio" name="payment" value="cash">
+                    <span>При получении</span>
+                </label>
+
+                <div class="form-row">
+                    <label for="promo">Промокод</label>
+                    <input id="promo" name="promo" type="text"
+                           placeholder="Введите промокод" minlength="4">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Дополнительная информация</legend>
+
+                <div class="form-row">
+                    <label for="comment">Комментарий</label>
+                    <textarea id="comment" name="comment" rows="5"
+                              placeholder="Например: позвонить перед доставкой"></textarea>
+                </div>
+            </fieldset>
+
+            <label class="checkbox-row">
+                <input type="checkbox" name="confirm" required>
+                <span>Я подтверждаю правильность данных заказа</span>
+            </label>
+
+            <button class="button" type="submit">Оформить заказ</button>
+
+            <p class="form-note">
+                Нет аккаунта? <a href="registration.html">Зарегистрироваться</a>
+                · Уже есть аккаунт? <a href="login.html">Войти</a>
+            </p>
+        </form>
+    </main>
+
+    <footer class="site-footer" id="site-footer">
+        <p>&copy; <time datetime="2026">2026</time> «Мелодия». Учебный проект.</p>
+        <address>
+            Email: <a href="mailto:info@melody-shop.ru">info@melody-shop.ru</a><br>
+            Телефон: <a href="tel:+79679124567">+7 (967) 912-45-67</a>
+        </address>
+    </footer>
+</body>
+</html>

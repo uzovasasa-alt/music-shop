@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - «Мелодия» </title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="../index.html" class="site-header__logo">Мелодия</a>
+
+        <nav class="site-header__nav" aria-label="Основная навигация">
+            <a href="../index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="product.html">Товар</a>
+            <a href="registration.html" aria-current="page">Регистрация</a>
+            <a href="login.html">Вход</a>
+            <a href="order.html">Оформление заказа</a>
+            <a href="../index.html#site-footer">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Регистрация</h1>
+        <p class="form-page__lead">
+        Создайте аккаунт, чтобы быстрее оформлять заказы и следить за
+        новинками.
+      </p>
+
+        <form class="shop-form" action="#" method="post">
+            <fieldset>
+                <legend>Личные данные</legend>
+                <div class="form-row">
+                    <label for="first-name">Имя</label>
+                    <input id="first-name" name="first-name" type="text"
+                    placeholder="Введите имя" minlength="2" required>
+                </div>
+                <div class="form-row">
+                <label for="last-name">Фамилия</label>
+                <input id="last-name" name="last-name" type="text" placeholder="Введите фамилию" minlength="2" required>
+                </div>
+                <div class="form-row">
+                    <label for="birth-date">Дата рождения</label>
+                    <input id="birth-date" name="birth-date" type="date" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Контакты и доступ</legend>
+                <div class="form-row">
+                    <label for="email">Электронная почта</label>
+                    <input id="email" name="email" type="email" placeholder="Введите электронную почту" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Номер телефона</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Введите номер телефона" required>
+                </div>
+                <div class="form-row">
+                    <label for="password">Пароль</label>
+                    <input id="password" name="password" type="password" placeholder="Введите пароль не менее 6 символов" minlength="6" required>
+                </div>
+                <div class="form-row">
+                    <label for="confirm-password">Подтверждение пароля</label>
+                    <input id="confirm-password" name="confirm-password" type="password" placeholder="Повторите пароль" minlength="6" required>
+                </div>
+            </fieldset>
+            <label class="checkbox-row">
+                <input type="checkbox" name="subscribe" checked>
+                <span>Подписаться на новости и акции</span>
+            </label>
+            <label class="checkbox-row">
+                <input type="checkbox" name="terms" required>
+                <span>Я согласен с правилами магазина</span>
+            </label>
+        <button class="button" type="submit">Зарегистрироваться</button>
+
+        <p class="form-note">
+          Уже есть аккаунт? <a href="login.html">Войти</a>
+        </p>
+      </form>
+    </main>
+
+    <footer class="site-footer" id="site-footer">
+      <p>&copy; <time datetime="2026">2026</time> «Мелодия». Учебный проект.</p>
+      <address>
+        Email: <a href="mailto:info@melody-shop.ru">info@melody-shop.ru</a><br>
+        Телефон: <a href="tel:+79679124567">+7 (967) 912-45-67</a>
+      </address>
+    </footer>
+</body>
+</html>

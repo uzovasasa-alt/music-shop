@@ -367,3 +367,167 @@ tbody tr:nth-child(even) {
   color: var(--color-accent);
   text-decoration: none;
 }
+
+/* ===== Формы (ЛР3): регистрация, вход, оформление заказа ===== */
+:root {
+  --color-border: #3a3a3a;
+  --color-valid: #2fb36b;
+  --color-invalid: #ff5a5f;
+}
+
+.form-page {
+  max-width: 760px;
+}
+
+.form-page__lead {
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.shop-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-surface-alt);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-row label {
+  font-weight: 600;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  padding: 0.75rem 0.875rem;
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: calc(var(--radius) - 2px);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-row textarea {
+  resize: vertical;
+}
+
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.7;
+}
+
+/* Состояния :valid / :invalid (поля с placeholder) */
+.shop-form input:invalid:not(:placeholder-shown) {
+  border-color: var(--color-invalid);
+}
+
+.shop-form input:valid:not(:placeholder-shown) {
+  border-color: var(--color-valid);
+}
+
+/* Поля без placeholder (select, date): показываем состояние после взаимодействия */
+.shop-form select:user-invalid,
+.shop-form input[type="date"]:user-invalid {
+  border-color: var(--color-invalid);
+}
+
+.shop-form select:user-valid,
+.shop-form input[type="date"]:user-valid {
+  border-color: var(--color-valid);
+}
+
+/* Состояние :focus */
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(255, 214, 10, 0.2);
+}
+
+.form-row input:focus-visible,
+.form-row select:focus-visible,
+.form-row textarea:focus-visible,
+.checkbox-row input:focus-visible,
+.radio-row input:focus-visible {
+  outline: 3px solid rgba(255, 214, 10, 0.45);
+  outline-offset: 2px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.radio-row,
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  cursor: pointer;
+}
+
+.radio-row input,
+.checkbox-row input {
+  width: auto;
+  margin-top: 0.35rem;
+  accent-color: var(--color-primary);
+}
+
+.shop-form .button {
+  width: 100%;
+  margin-top: 0;
+  border: 0;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.shop-form .button:active {
+  transform: translateY(0);
+}
+
+.shop-form .button:focus-visible {
+  outline: 3px solid rgba(255, 214, 10, 0.6);
+  outline-offset: 3px;
+}
+
+.form-note {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 600px) {
+  .shop-form {
+    padding: 1.875rem;
+  }
+
+  .shop-form .button {
+    width: auto;
+    align-self: flex-start;
+  }
+}
