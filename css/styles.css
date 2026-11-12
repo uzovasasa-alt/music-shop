@@ -368,7 +368,6 @@ tbody tr:nth-child(even) {
   text-decoration: none;
 }
 
-/* ===== Формы (ЛР3): регистрация, вход, оформление заказа ===== */
 :root {
   --color-border: #3a3a3a;
   --color-valid: #2fb36b;
@@ -439,7 +438,6 @@ tbody tr:nth-child(even) {
   border-color: var(--color-valid);
 }
 
-/* Поля без placeholder (select, date): показываем состояние после взаимодействия */
 .shop-form select:user-invalid,
 .shop-form input[type="date"]:user-invalid {
   border-color: var(--color-invalid);
@@ -450,7 +448,6 @@ tbody tr:nth-child(even) {
   border-color: var(--color-valid);
 }
 
-/* Состояние :focus */
 .form-row input:focus,
 .form-row select:focus,
 .form-row textarea:focus {
