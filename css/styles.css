@@ -185,13 +185,27 @@ img {
 }
 .catalog {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
   margin: 1.5rem 0 2.5rem;
 }
+
 .catalog h2 {
   grid-column: 1 / -1;
 }
+
+@media (max-width: 900px) {
+  .catalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card {
   position: relative;
   background: var(--color-surface);
